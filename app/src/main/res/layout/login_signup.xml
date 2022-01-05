@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50pt"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="text" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:id="@+id/log"
+        android:layout_below="@+id/Password"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+        android:hint="Email Id"
+        android:layout_marginTop="5dp"
+        android:inputType="textEmailAddress" />
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:layout_below="@+id/EmailAddress"
+          android:layout_marginTop="10dp"
+          android:inputType="textPassword"
+          android:layout_centerHorizontal="true"
+          android:id="@+id/Password"
+          android:hint="Password"
+          />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:text="Sign Up"
+        android:layout_toEndOf="@+id/log"
+        android:layout_toRightOf="@+id/log"
+        android:layout_marginTop="30dp"
+        android:id="@+id/sign"
+       />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/note"
+            android:layout_below="@+id/log"
+            android:layout_marginTop="30dp"
+            android:text="New Users? Sign Up.."
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Reset Password"
+        android:id="@+id/reset"
+        />
+</RelativeLayout>

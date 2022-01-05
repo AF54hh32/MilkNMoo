@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tooltip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7deb17"
+        android:minHeight="?attr/actionBarSize"
+        app:title=""
+        app:titleTextColor="@color/white"
+        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_baseline_account_circle_24"
+          android:id="@+id/profile"
+          android:layout_gravity="end"
+          android:layout_marginRight="10dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/locate"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>
